@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0908;
+  }
+
+  ::selection {
+    background-color: #d9a05b;
+    color: #0a0908;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply font-sans text-xs uppercase tracking-[0.35em] text-amber;
+  }
+}
